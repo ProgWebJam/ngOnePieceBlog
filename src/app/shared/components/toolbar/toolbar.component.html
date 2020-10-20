@@ -4,7 +4,7 @@
 
     <!-- Se mostrara Admin si el usuario esta logiado-->
     <a routerLink="/admin" routerLinkActive="active" *ngIf="authSvc.userData$ | async">
-        <button mat-button >Admin.........</button> 
+        <button mat-button >Admin</button> 
     </a>
 
     <a routerLink="/about" routerLinkActive="active">
