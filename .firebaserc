@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ngblog-5b203": {
+      "hosting": {
+        "ngBlog": [
+          "ngblog-5b203"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ngblog-5b203"
+  }
+}

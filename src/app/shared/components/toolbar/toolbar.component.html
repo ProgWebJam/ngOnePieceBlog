@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <a routerLink="/">{{ appName }}</a>
+    <span class="fill-remaining-space"></span>
+
+    <!-- Se mostrara Admin si el usuario esta logiado-->
+    <a routerLink="/admin" routerLinkActive="active" *ngIf="authSvc.userData$ | async">
+        <button mat-button >Admin.........</button> 
+    </a>
+
+    <a routerLink="/about" routerLinkActive="active">
+        <button mat-button >About</button> 
+    </a>
+
+    <!-- Se mostrara LogOutn si el usuario esta logiado de lo contrario muestre Login-->
+    <a *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogout()">
+        <button mat-button >LogOut</button> 
+    </a>
+
+    <ng-template #showLogin>
+        <a routerLink="/login" routerLinkActive="active">
+            <button mat-button >Login</button> 
+        </a>
+    </ng-template>
+
+
+</mat-toolbar>

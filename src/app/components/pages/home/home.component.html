@@ -1,0 +1,14 @@
+<div class="container" *ngIf='posts$ | async as posts; else loading'>
+    <!--{{ posts$ | async | json }}
+    <mat-card class="post-card" *ngFor="let post of posts$ | async ">-->
+    <mat-card class="post-card" *ngFor="let post of posts">
+        <!--Llamo a post desde home con el selector app-post-->
+        <app-post [post]="post"></app-post>
+    </mat-card>
+</div>
+
+<ng-template #loading>
+    <div class="container-spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+</ng-template>
