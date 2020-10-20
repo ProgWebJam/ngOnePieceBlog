@@ -47,7 +47,7 @@ export class EditPostComponent implements OnInit {
 
     //Condicion si imagen que se edita es igual a la original
     if( this.image === this.imageOriginal){
-      this.post.imagePost = this.imageOriginal;
+      post.imagePost = this.imageOriginal;
       //llamar metodo pasandole el post
       this.postSvc.editPostById(post);
     } 
