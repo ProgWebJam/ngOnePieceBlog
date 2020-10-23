@@ -1,4 +1,4 @@
-<!-- Barra nav -->
+<!-- Barra nav 
 <mat-toolbar color="primary" class="navbar">
 
     <span color="primary" (click)="opened = !opened">
@@ -13,11 +13,11 @@
 
     <span class="fil-remaining-space"></span>
 
-</mat-toolbar>
+</mat-toolbar>-->
 <!-- test menu desplegable
 {{ opened }}
 -->
-<!-- Contenido Menu -->
+<!-- Contenido Menu 
 <mat-sidenav-container>
     <mat-sidenav #sideNav [(opened)]="opened" mode="side" >
         <mat-nav-list>
@@ -45,4 +45,43 @@
     </mat-sidenav-content>
         
 </mat-sidenav-container>
+-->
 
+
+<!--Navbar-->
+<nav #sideNav class="navbar navbar-2 white">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img src="{{ logoOnePiece }}" class="logo"></a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+          <a mat-list-item routerLink="posts">
+            <mat-icon>book</mat-icon>Posts
+        </a>
+        </li>
+        <li class="nav-item">
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+          <a mat-list-item routerLink="profile">
+            <mat-icon>account_circle</mat-icon>Profile
+        </a>
+        </li>
+        
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+  <router-outlet></router-outlet>

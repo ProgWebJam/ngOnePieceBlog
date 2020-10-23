@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdminComponent implements OnInit {
 
   public opened = false;
+  public logoOnePiece = 'https://i.postimg.cc/SXHjj1ts/onePiece.png';
 
   constructor() { }
 

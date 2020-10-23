@@ -23,7 +23,19 @@ table {
     button{
       width: 25%;
       color: #fff;
-      background: #451e89;
+      background: #224EC7;
       cursor: pointer;
     }
+  }
+
+  @media(max-width: 959px){
+
+    table {
+      width: 100%;
+    }
+
+    .container-btn-new button {
+      width: 50%;
+    }
+
   }

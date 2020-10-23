@@ -6,8 +6,8 @@ a{
 
 
 .mat-card-image{
-    height: 250px;
-    width: 250px;
+    height: 80%;
+    //width: 250px;
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
 }
@@ -17,7 +17,7 @@ p.content{
     text-overflow: ellipsis;
 }
 
-@media(max-width: 959px){
+/* @media(max-width: 959px){
 
     .mat-card-image{
         height: 290px;
@@ -25,5 +25,16 @@ p.content{
 
     }
 
-}
+} */
 
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    
+    .mat-card-image{
+        height: 250px;
+        width: 340px;
+
+    }
+}
+ */
