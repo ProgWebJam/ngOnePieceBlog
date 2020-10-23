@@ -1,21 +1,83 @@
+.contBanner{
+    padding-top: 2rem;
+}
+
+
+.titulo{
+    //background-color: blue;
+    //color: #DAA520;
+    //color: #FCC200;
+    //color: #FFBA00;
+    color: #960018;
+    
+}
 .container {
 
     margin-top: 25px;
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
-    grid-column-gap: 10px;
+    grid-column-gap: 40px;
     grid-row-gap: 15px;
     justify-content: center;
 
     .post-card{
-        background: #444;
+        //background: #960018;
+        //background: #B22222;
+        //background: #8B0000;
+        background: #2A52BE;
+        //background: #DA3700;
+        
+        
+
         color: #fff;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 20px;
         font-size: 150px;
 
     }
 
+
+
+}
+
+@media(max-width: 959px){
+
+    .container {
+
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        justify-content: center;
+    }
+
+    .imgBarco{
+    
+        //height: 50%;
+
+        img{
+
+            height: 70%;
+        }
+    }
+    
+
+
+    .h1, h1 {
+        font-size: 2rem;
+    }
+
+    mat-divider{
+
+        width: 90%;
+    }
+
+    .titulo{
+        padding-left: 4.5rem;
+        height: 15%;
+        
+    }
 
 
 }

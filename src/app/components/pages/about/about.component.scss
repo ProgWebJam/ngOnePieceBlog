@@ -1,5 +1,28 @@
+mat-card{
+    margin-top: 80px;
+}
 .card-about{
     background: #fff;
     color: #000;
     height: 100%;
+}
+
+img{
+    width: 85%;
+    padding-bottom: 3rem;
+    padding-left: 6rem;
+}
+
+@media(max-width: 959px){
+
+    mat-card{
+        margin-top: 30px;
+    }
+
+    img{
+        width: 300px;
+        padding-left: 0.5rem;
+
+    }
+
 }

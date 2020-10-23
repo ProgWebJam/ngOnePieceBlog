@@ -1,4 +1,58 @@
 a {
-    color: #fff;
+    color: #8B0000;
     text-decoration: none;
+}
+
+/*
+.active{
+    background: #8B0000;
+
+}
+*/
+
+.tituloMenuPrin{
+    font-size: 26px;
+}
+
+.tituloMenu{
+    font-size: 20px;
+}
+mat-toolbar{
+    
+
+  //background-color:#2A52BE;
+  //background-color:#8B0000;
+  background-color:#FFBA00;
+  height: 20%;
+
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://i.postimg.cc/cKvrxGh2/one-Piece-Icon.jpg');
+    width: 3rem;
+    height: 2.5em;
+
+}
+
+.navbar{
+    background-color:#FFBA00;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+    }
+    .navbar-toggler.toggler-example {
+    cursor: pointer;
+    }
+
+
+@media(max-width: 959px){
+
+    .navbar.navbar-1 .navbar-toggler-icon {
+        background-image: url('https://i.postimg.cc/cKvrxGh2/one-Piece-Icon.jpg');
+        width: 2.5rem;
+        height: 2em;
+    
+    }
+
 }

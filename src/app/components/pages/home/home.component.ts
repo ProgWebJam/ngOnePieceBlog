@@ -9,6 +9,9 @@ import { PostI } from '../../../shared/models/post.interface';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  public currentImage = 'https://i.postimg.cc/bG5Skwdq/barco2.png';
+  //public currentImage = 'https://i.postimg.cc/qNMNF33k/barco3.png';
   /*
   //propiedad del Post en un array
   public posts: {

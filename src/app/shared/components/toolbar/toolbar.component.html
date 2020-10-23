@@ -1,8 +1,10 @@
-<mat-toolbar color="primary">
-    <a routerLink="/">{{ appName }}</a>
+ <!--<mat-toolbar>
+   <a routerLink="/">{{ appName }}</a>
+    <img src="{{ logoOnePiece }}" class="logo">
+    
     <span class="fill-remaining-space"></span>
 
-    <!-- Se mostrara Admin si el usuario esta logiado-->
+ 
     <a routerLink="/admin" routerLinkActive="active" *ngIf="authSvc.userData$ | async">
         <button mat-button >Admin</button> 
     </a>
@@ -11,7 +13,7 @@
         <button mat-button >About</button> 
     </a>
 
-    <!-- Se mostrara LogOutn si el usuario esta logiado de lo contrario muestre Login-->
+
     <a *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogout()">
         <button mat-button >LogOut</button> 
     </a>
@@ -24,3 +26,57 @@
 
 
 </mat-toolbar>
+-->
+
+<!--Navbar-->
+<nav class="navbar navbar-1 white">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img src="{{ logoOnePiece }}" class="logo"></a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+          <a class="nav-link" routerLink="/">
+            <button mat-button ><h1 class="tituloMenuPrin">Posts</h1></button> 
+        </a>
+        </li>
+        <li class="nav-item">
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+          <a class="nav-link" routerLink="/admin" *ngIf="authSvc.userData$ | async">
+            <button mat-button ><h2 class="tituloMenu">Admin</h2></button> 
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">
+            <button mat-button ><h2 class="tituloMenu">About</h2></button> 
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogout()">
+            <button mat-button ><h2 class="tituloMenu">LogOut</h2></button> 
+        </a>
+        </li>
+        <li class="nav-item">
+          <ng-template #showLogin>
+            <a routerLink="/login">
+                <button mat-button ><h2 class="tituloMenu">Login</h2></button> 
+            </a>
+        </ng-template>
+        </li>
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->

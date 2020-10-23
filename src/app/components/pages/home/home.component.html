@@ -1,4 +1,14 @@
+<div class="row contBanner">
+    <div class="col-2 imgBarco">
+        <img src="{{ currentImage }}" class="logo">
+    </div>
+    <div class="col-10 titulo">
+        <h1>Mugiwaras</h1>
+        <mat-divider></mat-divider>
+    </div>
+</div>
 <div class="container" *ngIf='posts$ | async as posts; else loading'>
+
     <!--{{ posts$ | async | json }}
     <mat-card class="post-card" *ngFor="let post of posts$ | async ">-->
     <mat-card class="post-card" *ngFor="let post of posts">
