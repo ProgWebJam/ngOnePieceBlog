@@ -1,0 +1,25 @@
+Código del proyecto:
+https://github.com/bezael/ngBlog
+
+----------Angular Material----------
+https://material.angular.io/
+
+----------FOTOS----------
+https://picsum.photos/
+
+----------Lorem Ipsum----------
+https://www.lipsum.com/
+
+
+--------sweetalert2---------
+https://sweetalert2.github.io/
+
+-----icon material------
+https://material.io/resources/icons/?style=baseline
+
+---login---
+jmarulo@gmail.com
+987654
+
+Para iterar y subir cambios en Firebase 
+https://medium.com/front-end-chile/como-iterar-y-subir-los-cambios-de-tu-app-con-angular-a-firebase-658d07d766c7
